@@ -1,10 +1,23 @@
+use indoc::indoc;
 use std::{collections::HashMap, env};
+
 static SUPERSCRIPT_NUMBERS: [char; 10] = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
 
 fn main() {
     let mut args = env::args();
     args.next();
     let string = args.collect::<String>();
+
+    if string.chars().count() == 0 {
+        eprintln!(indoc! {r#"
+            Example:
+            $ char_occurence "hello"
+
+            Output:
+            h¹e¹l²l²o¹
+        "#});
+        return;
+    }
 
     let occurences = get_occurences(&string);
 
