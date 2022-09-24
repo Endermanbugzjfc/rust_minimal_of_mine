@@ -1,5 +1,7 @@
 [package]
 name = "char_occurence"
+description = "CLI that displays the occurences of character in the argument string as superscript."
+license = "BSD-3-Clause license"
 version = "0.1.0"
 edition = "2021"
 
