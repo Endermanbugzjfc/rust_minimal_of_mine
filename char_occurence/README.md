@@ -1,4 +1,4 @@
-![crates.io](https://img.shields.io/crates/v/char_occurence.svg)
+[![crates.io](https://img.shields.io/crates/v/char_occurence.svg)](https://crates.io/crates/char_occurence)
 # Char Occurence
 Trust me, the typo is intended.
 ### Example
