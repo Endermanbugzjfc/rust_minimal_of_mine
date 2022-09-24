@@ -2,7 +2,7 @@
 name = "char_occurence"
 description = "CLI that displays the occurences of character in the argument string as superscript."
 license = "BSD-3-Clause"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
