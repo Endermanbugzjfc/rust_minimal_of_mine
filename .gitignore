@@ -1,0 +1,4 @@
+# I have target-mac and target-linux,
+target*
+# and clearly Mac does not like FAT32.
+._*
