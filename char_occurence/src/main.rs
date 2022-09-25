@@ -1,7 +1,8 @@
+use crate::superscript::Superscript;
 use indoc::indoc;
 use std::{collections::HashMap, env};
 
-static SUPERSCRIPT_NUMBERS: [char; 10] = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+mod superscript;
 
 fn main() {
     let mut args = env::args();
@@ -25,7 +26,7 @@ fn main() {
         "{}",
         string
             .chars()
-            .map(|c| format!("{}{}", c, SUPERSCRIPT_NUMBERS[occurences[&c]]))
+            .map(|c| format!("{}{}", c, occurences[&c].superscript()))
             .collect::<String>()
     );
 }
