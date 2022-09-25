@@ -7,7 +7,7 @@ mod superscript;
 fn main() {
     let mut args = env::args();
     args.next();
-    let string = args.collect::<String>();
+    let string = args.collect::<Vec<String>>().join(" ");
 
     if string.len() == 0 {
         eprintln!(indoc! {r#"
