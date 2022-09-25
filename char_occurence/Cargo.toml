@@ -2,7 +2,7 @@
 name = "char_occurence"
 description = "CLI that displays the occurences of character in the argument string as superscript."
 license = "BSD-3-Clause"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 repository = "https://github.com/Endermanbugzjfc/rust_minimal_of_mine/"
 
