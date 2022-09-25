@@ -8,7 +8,7 @@ fn main() {
     args.next();
     let string = args.collect::<String>();
 
-    if string.chars().count() == 0 {
+    if string.len() == 0 {
         eprintln!(indoc! {r#"
             Example:
             $ char_occurence "hello"
@@ -25,12 +25,7 @@ fn main() {
         "{}",
         string
             .chars()
-            .map(|c| {
-                let mut string = c.to_string();
-                string.push(SUPERSCRIPT_NUMBERS[occurences[&c]]);
-
-                string
-            })
+            .map(|c| format!("{}{}", c, SUPERSCRIPT_NUMBERS[occurences[&c]]))
             .collect::<String>()
     );
 }
