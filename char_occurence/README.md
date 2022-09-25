@@ -1,5 +1,8 @@
-[![crates.io](https://img.shields.io/crates/v/char_occurence.svg)](https://crates.io/crates/char_occurence)
 # Char Occurence
+[![crates.io](https://img.shields.io/crates/v/char_occurence.svg)](https://crates.io/crates/char_occurence)
+
+CLI that displays the occurences of character in the argument string as superscript.
+
 Trust me, the typo is intended.
 ### Example
 ```
