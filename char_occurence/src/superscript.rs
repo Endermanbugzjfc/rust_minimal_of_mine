@@ -7,7 +7,7 @@ static NUMBERS: [char; 10] = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷
 impl Superscript for usize {
     fn superscript(&self) -> String {
         let n = *self;
-        if n > NUMBERS.len() {
+        if n >= NUMBERS.len() {
             (n / 10).superscript() + &(n % 10).superscript()
         } else {
             NUMBERS[n].to_string()
