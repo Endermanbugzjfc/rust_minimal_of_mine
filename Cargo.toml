@@ -1,5 +1,13 @@
 [workspace]
-
 members = [
     "char_occurence",
+    "powerpoint",
 ]
+
+[workspace.package]
+license = "BSD-3-Clause"
+edition = "2021"
+repository = "https://github.com/Endermanbugzjfc/rust_minimal_of_mine/"
+
+[workspace.dependencies]
+indoc = "1.0"
